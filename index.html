@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pizzagon!</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <link rel = "stylesheet" href = "node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class = "container">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light" style = "border-radius: 20px;">
+          <div class="container">
+            <a class="navbar-brand"><strong> The Pizzagon!</strong></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+      </div>
+    </nav>
+    
+    <br>
+    <div class = "container-fluid bg-light p-5" style = "border-radius: 20px;" id = "new-pizza">
+        <h2>This is where you order the pizza!! Yum Yum!</h2><br>
+        <input type = "text" placeholder = "Your Pizza Order!" class = "form-control" id = "new-pizza-name"><br>
+        <button type = "submit" class = "btn btn-primary" id = "create-new-pizza">PIZZA TIME!</button>
+    </div>
+
+    <div id = "pizzaApp"> <!--this is where the app will go-->
+    
+    </div>
+    
+
+
+
+    <script src = "node_modules/jquery/dist/jquery.min.js"></script>
+    <script src = "index.js"></script>
+    <script src = "node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
